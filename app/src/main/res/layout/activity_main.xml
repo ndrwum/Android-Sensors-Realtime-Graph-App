@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tikeon.ndrwum.assignment2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/accelbtn"
+            android:layout_width="@dimen/btnwidth"
+            android:layout_height="@dimen/btnheight"
+            android:onClick="startAccel"
+            android:text="Accelerometer" />
+
+        <LinearLayout
+
+            android:id="@+id/accel_info"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:layout_alignParentRight="true"
+
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/accel_stat"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Status:" />
+
+            <TextView
+
+                android:id="@+id/accel_range"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Range:" />
+
+            <TextView
+
+                android:id="@+id/accel_res"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Resolution:" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lightbtn"
+            android:layout_width="@dimen/btnwidth"
+            android:layout_height="@dimen/btnheight"
+            android:onClick="startLight"
+            android:text="Light" />
+
+        <LinearLayout
+
+            android:id="@+id/light_info"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:layout_alignParentRight="true"
+
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/light_stat"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Status:" />
+
+            <TextView
+
+                android:id="@+id/light_range"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Range:" />
+
+            <TextView
+
+                android:id="@+id/light_res"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Resolution:" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
